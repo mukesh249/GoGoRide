@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        tools:context="in.wingstud.gogoride.activity.RatingActi">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/trip_feedback"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_sad"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_avrage"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_happiness"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_vertical">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_feedback"
+                    android:textColor="@color/colorAccent"/>
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:secondaryProgressTint="@color/gray"
+                    android:rating="4.5"
+                    android:numStars="5"/>
+
+
+            </LinearLayout>
+
+            <in.wingstud.gogoride.custome.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="@string/thank_you"
+                android:textSize="@dimen/sp_30"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:src="@drawable/ic_thank_you"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/dp_40"/>
+
+
+        </LinearLayout>
+
+        <in.wingstud.gogoride.custome.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:text="@string/re_palne"
+            android:layout_gravity="right"
+            android:onClick="rePlaneProcess"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorAccent"
+            android:padding="@dimen/dp_10"/>
+
+
+    </LinearLayout>
+
+</layout>

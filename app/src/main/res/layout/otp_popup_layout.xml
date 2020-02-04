@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_30"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_20"
+                android:gravity="center_horizontal">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP - 2563"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorAccent"/>
+
+                <ImageView
+                    android:id="@+id/imvDriver"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@drawable/profile_thumb"/>
+                
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtDriverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="Ravi Kumar"
+                    android:textSize="@dimen/sp_18"
+                    android:textColor="@color/colorAccent"/>
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtDriverMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="+91 4523652653"
+                    android:textSize="@dimen/sp_18"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtVehicleNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="Vehicle No: RJ14 CD 4523"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/colorAccent"/>
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:text="How Far: 1 KM"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/colorAccent"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

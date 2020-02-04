@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/relProfileSideBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_20">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:background="@drawable/rounded_image_bg">
+
+                <in.wingstud.gogoride.custome.CircleImageView
+                    android:id="@+id/imvUserImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile_thumb" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtUsername"
+                    style="@style/slider_text_view"
+                    android:text="Ravi Kumar"
+                    android:textSize="@dimen/sp_16"/>
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:id="@+id/txtMobileNo"
+                    style="@style/slider_text_view"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="+91 1235465856"
+                    android:textSize="@dimen/sp_12"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:padding="@dimen/dp_8"
+                android:src="@drawable/ic_right_angle"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/md_grey_500"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNavMenuList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/md_grey_500"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                android:src="@drawable/ic_logout"/>
+
+            <in.wingstud.gogoride.custome.TextViewRegular
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="@string/logout"
+                android:paddingLeft="@dimen/dp_5"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/nav_txt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

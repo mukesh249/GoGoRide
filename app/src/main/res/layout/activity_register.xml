@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+        <variable
+            name="registerViewModel"
+            type="in.wingstud.gogoride.viewmodel.SignUpViewModel" />
+        <variable
+            name="registerPersenter"
+            type="in.wingstud.gogoride.presenter.SignUpPresenter" />
+    </data>
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context="in.wingstud.gogoride.activity.RegisterActi">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar"
+                android:id="@+id/toolbar"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    style="@style/login_signup_text_view_style"
+                    android:text="@string/f_name_star"/>
+
+                <in.wingstud.gogoride.custome.EditTextViewRegular
+                    android:text="@={registerViewModel.f_name}"
+                    android:id="@+id/etFirstName"
+                    style="@style/login_edit_text_style" />
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:layout_marginTop="@dimen/dp_20"
+                    style="@style/login_signup_text_view_style"
+                    android:text="@string/l_name_star"/>
+
+                <in.wingstud.gogoride.custome.EditTextViewRegular
+                    android:text="@={registerViewModel.l_name}"
+                    android:id="@+id/etLastName"
+                    style="@style/login_edit_text_style" />
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    style="@style/login_signup_text_view_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/email_id"/>
+
+                <in.wingstud.gogoride.custome.EditTextViewRegular
+                    android:text="@={registerViewModel.email}"
+                    android:id="@+id/etEmail"
+                    style="@style/login_edit_text_style" />
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    style="@style/login_signup_text_view_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/mobile_no_star"/>
+
+                <in.wingstud.gogoride.custome.EditTextViewRegular
+                    android:text="@={registerViewModel.mobile}"
+                    android:id="@+id/etMobileNo"
+                    style="@style/login_edit_text_style" />
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:visibility="gone"
+                    style="@style/login_signup_text_view_style"
+                    android:text="@string/password"
+                    android:layout_marginTop="@dimen/dp_20"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <in.wingstud.gogoride.custome.EditTextViewRegular
+                        android:id="@+id/etPassword"
+                        style="@style/login_edit_text_style"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <in.wingstud.gogoride.custome.ButtonViewRegular
+                android:onClick="@{(v)->registerPersenter.SignupData()}"
+                style="@style/login_button_style"
+                android:text="@string/sign_up"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:orientation="horizontal">
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:text="@string/already_have_an_account"
+                    android:textColor="@color/colorAccent"/>
+
+                <in.wingstud.gogoride.custome.TextViewRegular
+                    android:onClick="goToLoginScreen"
+                    android:id="@+id/txtSignUP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_20"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginStart="@dimen/dp_5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

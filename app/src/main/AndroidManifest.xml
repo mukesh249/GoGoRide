@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.wingstud.gogoride">
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActi"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Dashboard"
+            android:screenOrientation="portrait" />
+
+         <meta-data
+         android:name="com.google.android.maps.v2.API_KEY"
+         android:value="@string/google_key" />
+
+        <activity android:name=".activity.OrderDetailActi" />
+        <activity android:name=".activity.OtpActi" />
+        <activity android:name=".activity.NotificationActi" />
+        <activity android:name=".activity.WalletActi" />
+        <activity android:name=".activity.TrackActi" />
+        <activity android:name=".activity.RegisterActi" />
+        <activity android:name=".activity.LocalRideActi" />
+        <activity android:name=".activity.RatingActi" />
+        <activity android:name=".activity.BookRentalActi" />
+        <activity android:name=".activity.Choose_Location" />
+        <activity android:name=".activity.ConfirmActi"></activity>
+    </application>
+
+</manifest>

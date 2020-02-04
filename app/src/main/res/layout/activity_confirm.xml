@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data></data>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context="in.wingstud.gogoride.activity.ConfirmActi">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@drawable/ic_sedan"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:id="@+id/txtVehicleType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sedan"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_18"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:id="@+id/txtVehicleDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sedan"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_14"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llOtherDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtAcNonAc"
+                        android:drawableLeft="@drawable/ic_right_angle"
+                        style="@style/confirm_booking_drawable_left_text_view_style"
+                        android:text="@string/ac"/>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtTopRated"
+                        android:drawableLeft="@drawable/ic_right_angle"
+                        style="@style/confirm_booking_drawable_left_text_view_style"
+                        android:text="@string/top_rated_partners"/>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtCanEntertainment"
+                        android:drawableLeft="@drawable/ic_right_angle"
+                        style="@style/confirm_booking_drawable_left_text_view_style"
+                        android:text="@string/in_cab_entertainment"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/color_accent_horizontal_line_style"
+                    android:layout_marginTop="@dimen/dp_10"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:background="@color/colorPrimary">
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:background="@color/colorAccent"/>
+
+                    <LinearLayout
+                        android:id="@+id/llPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:background="@drawable/green_circle_bg"/>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pickup_address"
+                                android:textSize="@dimen/sp_12"
+                                android:textColor="@color/colorAccent"/>
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:id="@+id/txtPickUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_14"
+                                android:text="2/26, Gandhi path, Roshan Market, B Block, Vaishali Nagar"
+                                android:textColor="@color/colorAccent"
+                                android:maxLines="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/llPickup">
+
+                        <View
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:background="@drawable/red_circle_bg"/>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pickup_address"
+                                android:textSize="@dimen/sp_12"
+                                android:textColor="@color/colorAccent"/>
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:id="@+id/txtDrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_14"
+                                android:text="Ramnagar, Jaipur, Rajasthan, India"
+                                android:textColor="@color/colorAccent"
+                                android:maxLines="1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/live_on"/>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/now"/>
+
+                </LinearLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/round_trip_fair_apply"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_18"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="One way trip of about 120 km"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_14"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="@dimen/dp_60"
+                            android:text="Rs2560"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:background="@drawable/ic_amount_bg"
+                            android:padding="@dimen/dp_10"
+                            android:textSize="@dimen/sp_16"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estimated_fair"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_14"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <LinearLayout
+                    android:id="@+id/llHideShowDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:onClick="hideShowDetails"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtHideShowDetials"
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/hide_fair_details"/>
+
+                    <ImageView
+                        android:id="@+id/imvHideShow"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:src="@drawable/ic_arrow_drop_down"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <LinearLayout
+                    android:id="@+id/llFareDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            style="@style/confirm_booking_left_text_view_style"
+                            android:text="@string/base_fare"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:id="@+id/baseFare"
+                            style="@style/confirm_booking_right_text_view_style"
+                            android:text="Rs 1100"/>
+                    </LinearLayout>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtBaseKm"
+                        style="@style/confirm_booking_small_text_view_style"
+                        android:text="upto 250 km"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            style="@style/confirm_booking_left_text_view_style"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="@string/fuel_charges"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:id="@+id/txtFuelCharges"
+                            style="@style/confirm_booking_right_text_view_style"
+                            android:text="Rs 1563"/>
+                    </LinearLayout>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtAverage"
+                        style="@style/confirm_booking_small_text_view_style"
+                        android:text="Average 15km / Ltr."/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            style="@style/confirm_booking_left_text_view_style"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="@string/night_charges"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:id="@+id/txtNiteCharges"
+                            style="@style/confirm_booking_right_text_view_style"
+                            android:text="Rs 0"/>
+                    </LinearLayout>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtAllowance"
+                        style="@style/confirm_booking_small_text_view_style"
+                        android:text="Driver allowance"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            style="@style/confirm_booking_left_text_view_style"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="@string/booking_amount"/>
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:id="@+id/txtBookinAmount"
+                            style="@style/confirm_booking_right_text_view_style"
+                            android:text="-Rs 100"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        style="@style/confirm_booking_left_text_view_style"
+                        android:text="@string/estimated_balance_fare"
+                        android:textSize="@dimen/sp_18"/>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:id="@+id/txtEstimatedFare"
+                        style="@style/confirm_booking_right_text_view_style"
+                        android:textSize="@dimen/sp_18"
+                        android:text="Rs 1100"/>
+                </LinearLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <in.wingstud.gogoride.custome.ButtonViewRegular
+                    android:id="@+id/btnRideStart"
+                    style="@style/login_button_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:onClick="startRideProcess"
+                    android:text="@string/ride_start"
+                    android:layout_marginBottom="@dimen/dp_40"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

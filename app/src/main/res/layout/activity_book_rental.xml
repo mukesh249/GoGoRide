@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data></data>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        tools:context="in.wingstud.gogoride.activity.BookRentalActi">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:background="@color/colorPrimary">
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:background="@color/colorAccent"/>
+
+                    <LinearLayout
+                        android:id="@+id/llPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:gravity="center_vertical">
+
+                        <View
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:background="@drawable/green_circle_bg"/>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pickup_address"
+                                android:textSize="@dimen/sp_12"
+                                android:textColor="@color/colorAccent"/>
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:id="@+id/txtPickUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_14"
+                                android:text="2/26, Gandhi path, Roshan Market, B Block, Vaishali Nagar"
+                                android:textColor="@color/colorAccent"
+                                android:maxLines="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/llPickup">
+
+                        <View
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:background="@drawable/red_circle_bg"/>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:orientation="vertical">
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pickup_address"
+                                android:textSize="@dimen/sp_12"
+                                android:textColor="@color/colorAccent"/>
+
+                            <in.wingstud.gogoride.custome.TextViewRegular
+                                android:id="@+id/txtDrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_14"
+                                android:text="Ramnagar, Jaipur, Rajasthan, India"
+                                android:textColor="@color/colorAccent"
+                                android:maxLines="1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <in.wingstud.gogoride.custome.TextViewRegular
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/trip_schedule"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_16"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today 19 Oct, 10:11 PM"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:textSize="@dimen/sp_12"
+                                android:button="@drawable/radio_button_bg"
+                                android:textColor="@color/colorAccent"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:text="@string/later"
+                                android:button="@drawable/radio_button_bg"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:textSize="@dimen/sp_12"
+                                android:textColor="@color/colorAccent"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            style="@style/book_now_radio_button_style"
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="@string/round_trip_fair_apply"/>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_40"
+                                android:padding="@dimen/dp_5"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:background="@drawable/dark_grey_background">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_30"
+                                    android:layout_height="@dimen/dp_30"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:padding="@dimen/dp_8"
+                                    android:background="@drawable/clack_circular_bg"
+                                    android:src="@drawable/ic_location_color_accent"/>
+
+                                <in.wingstud.gogoride.custome.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/sp_10"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:text="One way trip of about 120 km"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/book_now_text_view_style"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="Connection charges Rs 100"/>
+
+                            <TextView
+                                style="@style/book_now_text_view_style"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Advance Payment Charges Rs 100"/>
+
+                            <TextView
+                                style="@style/book_now_text_view_style"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Toll Tax + Parking Charges Shall be extra"/>
+
+                            <TextView
+                                style="@style/book_now_text_view_style"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Driver Night Charges Rs 250 will be extra"/>
+
+                            <TextView
+                                style="@style/book_now_text_view_style"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Night hours 10:30 pm to 5:30 am"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RadioButton
+                        style="@style/book_now_radio_button_style"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="Fare per day charge (upto 250 km) + Fuel cost"/>
+
+                    <RadioButton
+                        style="@style/book_now_radio_button_style"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="Fare per km charge (after 250 km)"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRentalCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/select_vehicle_type"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@id/rbAc"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbAc"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            style="@style/book_now_radio_button_style"
+                            android:text="@string/ac"/>
+
+                        <RadioButton
+                            android:id="@+id/rbNonAc"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            style="@style/book_now_radio_button_style"
+                            android:text="@string/non_ac"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLogistic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:padding="@dimen/dp_10">
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/loading_material_type"/>
+
+                    <in.wingstud.gogoride.custome.TextViewRegular
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_10"
+                        android:text="@string/example_cement"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/grey_rounded_corner_background"/>
+
+                </LinearLayout>
+
+                <View style="@style/color_accent_horizontal_line_style"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

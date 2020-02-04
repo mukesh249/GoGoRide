@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">GoGo Rides</string>
+
+    <string name="google_key">AIzaSyDdI9Au-yloIs1B3ny2LWl24NwTd5F5dN8</string>
+<!--    <string name="google_key">AIzaSyBTeuBxlcuFM8nC-OIkoxz4vqyGQA2OJ40</string>-->
+    <string name="Rs">Rs.</string>
+
+    <string name="error_mobile_number_wrong">Please enter valid mobile number</string>
+
+    <string name="no_internet_connection_available">No Internet Connection available.</string>
+
+    <string name="error_mobile_number_blank"> Mobile number should not be blank</string>
+    <string name="Ok">Ok</string>
+    <string name="Are_you_sure_to_logout">Do you want to logout?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="Please_BACK_again_to_exit">Please BACK again to exit</string>
+
+    <!--Login Screen Strings-->
+
+    <string name="password">Password*</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--Slider Screen Strings-->
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="orders_history">Order History</string>
+    <string name="logout">Logout</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!--Home Screen Strings-->
+
+    <string name="pickup">Pickup</string>
+
+    <!--Chat Screen Strings-->
+
+    <string name="profile">Profile</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="help">Help &amp; Support</string>
+    <string name="order_id">Order Id:</string>
+    <string name="please_enter_registered_mobile_number">Please Enter registered \n mobile number</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="todays_payment">Today\'s Payment</string>
+    <string name="todays_orders">Today\'s Orders</string>
+    <string name="commission_wallet">Commission Wallet</string>
+    <string name="drop">Drop</string>
+    <string name="cash">Cash</string>
+    <string name="order_details">Order Details</string>
+    <string name="notification">Notification</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="drop_off">Drop Off</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="settings">Settings</string>
+    <string name="mobile_no_email_id">Mobile No. / Email Id*</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_an_accoount">Don\'t have an account?</string>
+    <string name="f_name_star">First Name*</string>
+    <string name="l_name_star">Last Name*</string>
+    <string name="email_id">Email Id</string>
+    <string name="mobile_no_star">Mobile No.*</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="book_your_ride">Book Your Ride</string>
+    <string name="rides_history">Rides History</string>
+    <string name="wallet">Wallet</string>
+    <string name="support">Support</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="pickup_from">PIckup From</string>
+    <string name="enter_drop_location">Enter drop location</string>
+    <string name="local_ride">Local Ride</string>
+    <string name="rental_car">Rental Car</string>
+    <string name="logistic">Logistic</string>
+    <string name="get_ride">Get Ride</string>
+    <string name="sos">SOS</string>
+    <string name="estimated_fair">Estimated Fair</string>
+    <string name="pay_by">Pay by</string>
+    <string name="card_net_banking">Card/ NetBanking</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="pay">Pay</string>
+    <string name="pick_a_payment_option">PIck a payment option</string>
+    <string name="net_payable_fair">Net Payable Fair</string>
+    <string name="re_palne">Re-Plane</string>
+    <string name="trip_feedback">Trip Feedback</string>
+    <string name="driver_feedback">Driver Feedback</string>
+    <string name="thank_you">Thank you</string>
+    <string name="pickup_address">Pickup Address</string>
+    <string name="trip_schedule">Trip Schedule</string>
+    <string name="later">Later</string>
+    <string name="round_trip_fair_apply">Round Trip Fair Apply</string>
+    <string name="select_vehicle_type">Select Vehicle Type</string>
+    <string name="non_ac">Non-AC</string>
+    <string name="ac">AC</string>
+    <string name="loading_material_type">Loading Material Type :</string>
+    <string name="example_cement">Example: cement / machinry / Wook / home...</string>
+    <string name="book_your_rental_car">Book your Rental Car</string>
+    <string name="book_your_logistic">Book your Logistic</string>
+    <string name="top_rated_partners">Top Rated Partners</string>
+    <string name="in_cab_entertainment">In - Cab Entertainment</string>
+    <string name="live_on">Live On</string>
+    <string name="now">NOW</string>
+    <string name="hide_fair_details">Hide Fair Details</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="fuel_charges">Fuel Charges</string>
+    <string name="night_charges">Night Charges</string>
+    <string name="booking_amount">Booking Amount</string>
+    <string name="estimated_balance_fare">Estimated Balance Fare</string>
+    <string name="ride_start">Ride Start</string>
+    <string name="confirm_your_booking">Confirm your booking</string>
+    <string name="api_hiting">Please wait…</string>
+    <string name="network_error_msg">Sorry! Not connected to internet</string>
+    <string name="gps_setting">GPS is settings</string>
+    <string name="gps_setting_menu">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="cancel">Cancel</string>
+    <string name="my_location">My Location</string>
+    <string name="choose_location">Choose location</string>
+    <string name="location_not_found">unable to Found current location</string>
+    <string name="your_current_location">Your Current Location</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="local">Local</string>
+    <string name="ride_now">Ride Now</string>
+    <array name="nav_drawer_items">
+        <item>@string/home</item>
+        <item>@string/book_your_ride</item>
+        <item>@string/rides_history</item>
+        <item>@string/wallet</item>
+        <item>@string/support</item>
+        <item>@string/about_us</item>
+        <item>@string/terms</item>
+        <item>@string/privacy_policy</item>
+    </array>
+</resources>
